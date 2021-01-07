@@ -14,7 +14,7 @@ after_success:
   docker build -t deepakbhatt74/multi-server ./server
   docker build -t deepakbhatt74/multi-worker ./worker
 
-# Login to docker
+# Login to docker environment
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # push it to docker hub
